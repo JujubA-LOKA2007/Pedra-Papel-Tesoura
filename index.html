@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pedra, Papel, Tesoura </h1>
+        
+        <div class="score-board">
+            <div class="player-score">
+                Player: <span class="score" id="player-score">0</span>
+            </div>
+            <div class="computer-score">
+                Computer: <span class="score" id="computer-score">0</span>
+            </div>
+        </div>
+        
+        <div class="choices">
+            <div class="choice player-choice" data-choice="✊">✊</div>
+            <div class="choice player-choice" data-choice="✋">✋</div>
+            <div class="choice player-choice" data-choice="✌️">✌️</div>
+        </div>
+        
+        <div class="choices">
+            <div class="vs">VS</div>
+            <div class="choice computer-choice" id="computer-choice">❔</div>
+        </div>
+        
+        <div class="result" id="result">Escolha!</div>
+        
+        <button class="play-again" id="play-again">Jogue novamente</button>
+        
+        <div class="instructions">
+            <p>Click on Rock (✊), Paper (✋), or Scissors (✌️) to play against the computer.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
