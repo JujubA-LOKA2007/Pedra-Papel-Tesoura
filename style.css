@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.score {
+    font-weight: bold;
+    color: #6e8efb;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+.choice {
+    font-size: 4rem;
+    background: white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.player-choice:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: #f0f0f0;
+}
+
+.selected {
+    background-color: #6e8efb;
+    color: white;
+}
+
+.vs {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    color: #777;
+}
+
+.result {
+    font-size: 1.8rem;
+    margin: 20px 0;
+    font-weight: bold;
+    min-height: 50px;
+    color: #333;
+}
+
+.win {
+    color: #2ecc71;
+}
+
+.lose {
+    color: #e74c3c;
+}
+
+.draw {
+    color: #f39c12;
+}
+
+.play-again {
+    background-color: #6e8efb;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.play-again:hover {
+    background-color: #5a7de0;
+}
+
+.instructions {
+    margin-top: 20px;
+    color: #666;
+    font-size: 1rem;
+}
